@@ -1,0 +1,546 @@
+/* --------------------------BODY E MAIN-------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(72deg, rgb(40, 40, 40) 1%, rgb(0, 0, 0) 85%);
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------CABEÇALHO-------------------------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 2px -2px rgb(255, 2, 2);
+    z-index: 1000;
+    width: 100%; 
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 550;
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+li #home {
+    color: rgb(255, 0, 0);
+}
+
+/* --------------------------PARTE 1 (BEM-VINDO)-------------------------- */
+.parte1 {
+    margin-top: 120px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+h3 {
+    color: white;
+    font-family:'Orbitron', sans-serif ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    margin: 0;
+}
+
+h4 {
+    color: white;
+    font-family:'Orbitron', sans-serif ;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    margin: 0;
+}
+
+h5 {
+    color: white;
+    font-family:'Orbitron', sans-serif ;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    margin: 0;
+}
+
+.botão {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #CF0093;
+    box-shadow: 100px 100px 50px -85px #FE4C28 inset;
+    border-style: solid;
+    border-radius: 400px;
+    transition: all 0.6s ease-in-out;
+}
+
+.link_botão {
+    font-family: 'Montserrat', sans-serif;;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.botão:hover, .botão:active {
+    background-image: linear-gradient(to right, #00BFFF, #87CEEB); 
+    box-shadow: 100px 100px 50px -85px rgba(0, 191, 255, 0.5) inset; 
+    border-color: #00BFFF; 
+}
+
+/* --------------------------PARTE 2 (SOBRE A FFCHIPS)-------------------------- */
+.parte2 {
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 2px;
+    display: flex;
+    padding-top: 125px;
+    padding-bottom: 50px;
+}
+
+#icon_clientes {
+    margin-left: 25px;
+    color: red;
+    font-size: 35px;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+#icon_carro {
+    margin-left: 25px;
+    color: red;
+    font-size: 35px;
+    justify-content: center;
+}
+
+#icon_primeiro {
+    margin-left: 25px;
+    color: red;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.icon-container {
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    color: red;
+    font-size: 60px;
+}
+
+.icon-container p {
+    margin: 2px 0 0;
+    margin-left: 25px;
+    font-size: 10px;
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.img_parte2 img {
+    max-width: 100%; 
+    height: 100%; 
+    margin-right: 20px; 
+    width: 500px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); 
+}
+
+.texto_parte2 {
+    color: white; 
+    max-width: 100%; 
+}
+
+.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation label:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+/* --------------------------PARTE 3 (SERVIÇOS)-------------------------- */
+.parte3 {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 125px;
+}
+
+.texto_parte3 h5 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0 50px;
+}
+
+.img_parte3 {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; 
+}
+
+.image-text img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.image-text img:hover {
+    transform: scale(1.1);
+}
+
+.image-text p {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.image-text span {
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* --------------------------PARTE 4 (REMAP)-------------------------- */
+.parte4 {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.parte4_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.parte4 h5 {
+    font-style: normal;
+    margin-right: 50px;
+}
+
+.parte4 iframe {
+    margin-top: 50px;
+}
+
+/* --------------------------PARTE 5 (EQUIPE)-------------------------- */
+.parte5 {
+    padding-top: 125px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.texto_parte5 h5 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 7px 0 30px;
+}
+
+.img_parte5 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; 
+}
+
+.image-text img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.image-text img:hover {
+    transform: scale(1.1);
+}
+
+.image-text p {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.image-text span {
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* --------------------------PARTE 6 (SOLUÇÕES)-------------------------- */
+.parte6 {
+    padding-top: 20px;
+    text-align: center ;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.parte6 img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.parte6_flex {
+    display: flex;
+    overflow: hidden;
+    overflow-x: hidden;
+    width: 500%;
+}
+
+.carrosel {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.carrosel:hover {
+    transform: scale(1.02);
+}
+
+/* --------------------------PARTE 7 (INFORMAÇÕES)-------------------------- */
+.parte7 {
+    padding-top: 50px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 40px -2px rgb(255, 2, 2);
+}
+
+.texto_parte7 h5 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 0 25px;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.colunas p {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.colunas span {
+    color: red;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.colunas ul {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+}
+
+.parte7 .icon-image {
+    width: 18px;
+    height: auto;
+}
+
+.parte7 button {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.parte7 .link_botão {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+}
+
+/* --------------------------FOOTER-------------------------- */
+footer {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------PARA TELAS MENORES-------------------------- */
